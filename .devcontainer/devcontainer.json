@@ -1,0 +1,18 @@
+{
+  "name": "Inventory",
+  "dockerComposeFile": "docker-compose.yaml",
+  "service": "inventory",
+  "workspaceFolder": "${localWorkspaceFolder}",
+  "extensions": [
+    "davidanson.vscode-markdownlint",
+    "esbenp.prettier-vscode",
+    "github.vscode-pull-request-github",
+    "shyykoserhiy.git-autoconfig",
+    "jock.svg",
+    "ms-azuretools.vscode-docker",
+    "redhat.vscode-yaml",
+    "vscodeshift.material-ui-snippets",
+    "orta.vscode-jest"
+  ],
+  "shutdownAction": "stopCompose"
+}

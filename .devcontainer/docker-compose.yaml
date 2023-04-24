@@ -1,0 +1,32 @@
+# @format
+
+networks:
+  default:
+    external: true
+    name: inventory
+
+volumes:
+  npm-cache:
+    name: npm-cache
+
+services:
+  inventory:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: inventory-frontend
+    hostname: inventory-frontend
+    restart: unless-stopped
+    working_dir: /workspace
+    environment:
+      REACT_EDITOR: code
+      BROWSER: none
+    ports:
+      - 3000
+    volumes:
+      - npm-cache:/usr/local/share/.cache/yarn
+      - ..:/${PWD}:cached
+      - ${HOME}/.docker:/root/.docker:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${HOME}/.ssh:/root/.ssh-host:ro
+    command: /bin/sh -c "sleep 10000h"

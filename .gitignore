@@ -1,0 +1,4 @@
+/node_modules
+/.task
+/yarn-error.log
+.DS_Store

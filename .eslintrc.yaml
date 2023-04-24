@@ -1,0 +1,4 @@
+# @format
+
+extends:
+  - react-app

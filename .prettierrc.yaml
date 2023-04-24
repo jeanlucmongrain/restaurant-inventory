@@ -1,0 +1,14 @@
+# @format
+
+semi: true
+singleQuote: false
+trailingComma: all
+bracketSpacing: True
+arrowParens: always
+insertPragma: true
+endOfLine: lf
+importOrder:
+  - ^\@mui/(.*)$,
+  - ^[a-z]$
+  - ^\.
+importOrderSeparation: true

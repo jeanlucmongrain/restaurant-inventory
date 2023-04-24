@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "davidanson.vscode-markdownlint",
+    "esbenp.prettier-vscode",
+    "github.vscode-pull-request-github",
+    "shyykoserhiy.git-autoconfig",
+    "jock.svg",
+    "redhat.vscode-yaml",
+    "vscodeshift.material-ui-snippets"
+  ]
+}

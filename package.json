@@ -1,0 +1,45 @@
+{
+  "name": "inventory",
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@fontsource/material-icons": "^4.5.4",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/material": "^5.12.1",
+    "@mui/styles": "^5.12.0",
+    "@types/node": "^18.16.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "^5.0.1",
+    "typescript": "^5.0.4",
+    "validator": "^13.9.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "7.16.7",
+    "@trivago/prettier-plugin-sort-imports": "3.1.1",
+    "@types/validator": "13.7.2",
+    "prettier": "2.6.2",
+    "ts-prune": "0.10.3"
+  }
+}

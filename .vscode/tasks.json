@@ -1,0 +1,44 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Server",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "BROWSER": ""
+        }
+      },
+      "command": "node_modules/.bin/react-scripts start",
+      "problemMatcher": []
+    },
+    {
+      "label": "Check for unused export",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "command": "node_modules/.bin/ts-prune --ignore=src/api/index.*",
+      "problemMatcher": []
+    },
+    {
+      "label": "Format code",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "command": "node_modules/.bin/prettier -w src/",
+      "problemMatcher": []
+    },
+    {
+      "label": "Verify code",
+      "type": "shell",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "command": "node_modules/.bin/eslint .",
+      "problemMatcher": []
+    }
+  ]
+}
